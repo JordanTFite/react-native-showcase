@@ -1,28 +1,41 @@
-import React, {useContext} from 'react';
-import {SafeAreaView, StatusBar, StyleSheet, Text, View} from 'react-native';
+import React, {useContext, useState, useEffect} from 'react';
+import {StatusBar, StyleSheet, Text, View} from 'react-native';
 
 import {ScreenContext} from '../../navigation/Tabs';
+import {SettingsContext} from '../../App';
 import Card from '../Card';
+import StyledSafeView from '../StyledSafeView';
 
-const Home = ({navigation}) => {
+const Home = () => {
   const screens = useContext(ScreenContext);
+  const {state: settings} = useContext(SettingsContext);
 
   return (
     <>
-      <SafeAreaView style={{backgroundColor: '#152025'}}>
+      <StyledSafeView>
         <StatusBar barStyle="light-content" />
         <View style={styles.mainView}>
-          <Text style={[styles.whiteText, styles.titleText]}>Welcome back</Text>
+          <Text style={[styles.whiteText, styles.titleText]}>
+            {settings.name ? `Welcome back, ${settings.name}!` : 'Welcome back'}
+          </Text>
           <Text style={styles.whiteText}>Here's whats new:</Text>
-          <Card subtitle={'Experimental'} title={'New Content'} />
           <Card
             title={'Cool Pics'}
             backgroundColor={'#2288bb'}
             target={screens.Other}
           />
-          <Card title={'Awesome'} backgroundColor={'#22bb22'} />
+          <Card
+            subtitle={'Experimental'}
+            title={'Users'}
+            target={screens.Experimental}
+          />
+          <Card
+            title={'Settings'}
+            backgroundColor={'#00bb22'}
+            target={screens.Settings}
+          />
         </View>
-      </SafeAreaView>
+      </StyledSafeView>
     </>
   );
 };
