@@ -20,13 +20,13 @@ The "Users" tab will not function properly if this application is run locally.
 ## Screenshots
 
 ### Home
-<img src="https://i.imgur.com/BtWf7iH.png" alt="home" width="512"/>
+<img src="https://i.imgur.com/BtWf7iH.png" alt="home" width="400"/>
 
 ### Pictures
-<img src="https://i.imgur.com/RmYl3ci.png" alt="home" width="512"/>
+<img src="https://i.imgur.com/RmYl3ci.png" alt="home" width="400"/>
 
 ### Users
-<img src="https://i.imgur.com/s9BT0hD.png" alt="home" width="512"/>
+<img src="https://i.imgur.com/s9BT0hD.png" alt="home" width="400"/>
 
 ### Settings
-<img src="https://i.imgur.com/eTLOnvJ.png" alt="home" width="512"/>
+<img src="https://i.imgur.com/eTLOnvJ.png" alt="home" width="400"/>
