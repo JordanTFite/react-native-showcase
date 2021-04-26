@@ -20,13 +20,13 @@ const Home = () => {
           </Text>
           <Text style={styles.whiteText}>Here's whats new:</Text>
           <Card
-            title={'Cool Pics'}
+            title={'Photos'}
             backgroundColor={'#2288bb'}
             target={screens.Other}
           />
           <Card
             subtitle={'Experimental'}
-            title={'Users'}
+            title={'User List'}
             target={screens.Experimental}
           />
           <Card
